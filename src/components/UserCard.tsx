@@ -1,4 +1,3 @@
-import { Button } from '@/components/ui/button';
 import type { Item } from '../types';
 import edit from '../assets/edit_icon.png';
 import deleteIcon from '../assets/delete.png';

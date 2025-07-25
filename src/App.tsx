@@ -5,9 +5,8 @@ import CreateItem from './pages/CreateItem';
 import EditItem from './pages/EditItem';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
-import Footer from './components/footer'
+import Footer from './components/footer';
 import Welcome from './pages/Welcome';
-import { Navbar } from './components/Navbar';
 
 function RequireAuth({ children }: { children: ReactNode }) {
   const isAuthed = !!localStorage.getItem('currentUser');
@@ -22,7 +21,7 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen">
       <Router>
-      
+        {/* Navbar is rendered inside each page if needed */}
         <div className="flex-1 overflow-y-auto">
           <Routes>
             <Route path="/welcome" element={<Welcome />} />
